@@ -1,5 +1,5 @@
 document.getElementById("button").addEventListener(`click`,()=>{let inputValue = document.getElementById('inputName').value 
-    fetch(`https:www.themealdb.com/api/json/v1/1/filter.php?a=${inputValue}`)
+    fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${inputValue}`)
     .then(Response => Response.json())
     .then(data => {
         const items = document.getElementById("items")
